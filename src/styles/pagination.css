@@ -1,0 +1,51 @@
+.container {
+    position: sticky;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    /* border: 2px solid red; */
+}
+
+.container .pagination {
+    margin: 10px 0;
+    padding: 10px 0;
+    /* border: 2px solid blue; */
+    /* position: relative; */
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    border-radius: 2px;
+}
+
+.container .pagination button {
+    /* display: inline-block; */
+    /* outline: none; */
+    border: none;
+    background: transparent;
+}
+
+.container .pagination button span {
+    /* position: relative; */
+    padding: 20px 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    /* border: 2px solid red; */
+}
+
+.container .pagination button span:hover,
+.container .pagination button.active span {
+    background: rgba(255, 255, 255, 0.2);
+}
+.container .pagination .disabled{
+    cursor: not-allowed;
+}
